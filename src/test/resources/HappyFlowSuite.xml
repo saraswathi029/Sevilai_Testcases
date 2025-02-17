@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SevilaiHappyFlowSuite" parallel="false">
+  <test name="SevilaiHappyFlow">
+    <classes>
+      <!-- Login should always be first -->
+      <class name="sevilai_Test.Login_Test"/>
+
+      <!-- Vehicle Add and Edit -->
+      <class name="sevilai_Test.SevilaiVehAdd"/>
+      <class name="sevilai_Test.SevilaiVehicleEdit"/>
+
+      <!-- Driver Add and Edit -->
+      <class name="sevilai_Test.SevilaiDriverAdd"/>
+      <class name="sevilai_Test.SevilaiDriverEdit"/>
+
+      <!-- Contract Driver Add, Edit, and Vehicle Edit -->
+      <class name="sevilai_Test.ContractDriverAdd"/>
+      <class name="sevilai_Test.ContractDriverEdit"/>
+      <class name="sevilai_Test.ContractVehicleEdit"/>
+    </classes>
+  </test>
+</suite>
+
