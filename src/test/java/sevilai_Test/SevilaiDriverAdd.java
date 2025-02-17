@@ -87,14 +87,14 @@ public class SevilaiDriverAdd extends Login_Test {
 
             // Validate success toast message
             WebElement toastMessage = wait.until(ExpectedConditions.presenceOfElementLocated(
-                    By.cssSelector("[aria-label*='Driver added successfully']")));
+                    By.cssSelector("[aria-label*='Driver added successfuly']")));
             String messageText = toastMessage.getAttribute("aria-label");
             Reporter.log("Toast Message: " + messageText, true);
 
             try {
                 Assert.assertTrue(messageText.contains("Driver added successfully"),
                         "Toast message validation failed for Test Case: " + testCaseID);
-                Reporter.log("Test Case " + testCaseID + " Passed: Driver added successfully.", true);
+                Reporter.log("Test Case " + testCaseID + " Passed: Driver added successfuly.", true);
             } catch (AssertionError e) {
                 Reporter.log("Test Case " + testCaseID + " Failed.", true);
                 throw e;
