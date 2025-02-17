@@ -27,9 +27,9 @@ public class ContractVehicleEdit extends Login_Test {
     	 Actions actions = new Actions(driver);
 
          // Navigate to the Driver tab
-         WebElement DriverTabButton = wait
-                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Tab 3 of 5')]")));
-         actions.moveToElement(DriverTabButton).click().perform();
+         WebElement VehicleTabButton = wait
+                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Tab 2 of 5')]")));
+         actions.moveToElement(VehicleTabButton).click().perform();
 
 		WebElement Contractvehicle = wait
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'Contract Vehicle')]")));

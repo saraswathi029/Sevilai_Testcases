@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sevilai_Admin_Tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Admin Tests(failed)">
+    <classes>
+      <class name="sevilai_New.Super_Admin_Test">
+        <methods>
+          <include name="initialize"/>
+          <include name="editSuperAdmin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- sevilai_New.Super_Admin_Test -->
+    </classes>
+  </test> <!-- Admin Tests(failed) -->
+</suite> <!-- Failed suite [Sevilai_Admin_Tests] -->

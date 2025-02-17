@@ -54,7 +54,7 @@ public class SevilaiDriverEdit extends Login_Test{
 		Driveremail.click();
 		Driveremail.sendKeys(Keys.CONTROL + "a");
 		Driveremail.sendKeys(Keys.BACK_SPACE);
-		//Driveremail.sendKeys("Drive@gmail.com");
+		Driveremail.sendKeys("Drive@gmail.com");
 		
         // Select an option from the dropdown (adjust the locator for the options)
         WebElement vehiclecapacity =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@aria-label='Driver Phone Number']/following::flt-semantics[@role='button'][1]"))); // Replace 'OptionText' with the actual text of the option
