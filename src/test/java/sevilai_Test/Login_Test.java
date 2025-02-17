@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Login_Test {
@@ -32,6 +34,8 @@ public class Login_Test {
             performLogin();
         }
     }
+    
+    @Test
 
     public void performLogin() throws Throwable {
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
