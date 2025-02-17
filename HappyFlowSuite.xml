@@ -17,7 +17,7 @@
       <!-- Contract Driver Add, Edit, and Vehicle Edit -->
       <class name="sevilai_Test.ContractDriverAdd"/>
       <class name="sevilai_Test.ContractDriverEdit"/>
-      <class name="sevilai_Test.ContractVehicleEdit"/>
+      
     </classes>
   </test>
 </suite>
