@@ -7,19 +7,19 @@
       <class name="sevilaitest.LoginTest"/>
       
 
-    <!--   Vehicle Add and Edit 
+      <!-- Vehicle Add and Edit--> 
       <class name="sevilaitest.SevilaiVehAddTest"/>
       <class name="sevilaitest.SevilaiVehicleEditTest"/>
 
-       Driver Add and Edit 
+       <!--Driver Add and Edit--> 
       <class name="sevilaitest.SevilaiDriverAddTest"/>
      <class name="sevilaitest.SevilaiDriverEditTest"/>
 
-       Contract Driver Add, Edit, and Vehicle Edit 
+     <!--  Contract Driver Add, Edit, and Vehicle Edit -->
       <class name="sevilaitest.ContractDriverAddTest"/>
       <class name="sevilaitest.ContractDriverEditTest"/>
-      <class name="sevilai_Test.ContractVehicleEdit"/>
-     -->
+      <!--<class name="sevilai_Test.ContractVehicleEdit"/>-->
+     
      
     </classes>
   </test>
