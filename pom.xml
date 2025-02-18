@@ -21,7 +21,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.10.2</version>
-    
+   
 </dependency>
  <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
@@ -71,27 +71,16 @@
     
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/com.epam.healenium/healenium-web -->
+
 <dependency>
-    <groupId>com.epam.healenium</groupId>
-    <artifactId>healenium-web</artifactId>
-    <version>3.5.4</version>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.8.0</version>
+    <scope>test</scope>
 </dependency>
- 
-
-
-
+ </dependencies>
   
-  
-  </dependencies>
-  
-   <!-- Add JitPack repository to resolve Healenium dependencies -->
-  <repositories>
-    <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </repository>
-  </repositories>
+   
  <build>
     <plugins>
         <plugin>
@@ -99,8 +88,9 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>3.5.2</version>
             <configuration>
-                <suiteXmlFiles>
-                    <suiteXmlFile>src/test/resources/HappyFlowSuite.xml</suiteXmlFile>
+                
+               <suiteXmlFiles>
+                    <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
         </plugin>
