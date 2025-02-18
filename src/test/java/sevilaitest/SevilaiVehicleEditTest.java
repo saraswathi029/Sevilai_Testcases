@@ -19,7 +19,7 @@ public class SevilaiVehicleEditTest extends LoginTest {
     }
    
 
-    @Test(dependsOnMethods = "sevilai_Test.SevilaiVehAdd.sevilaiadd")
+    @Test(dependsOnMethods = "sevilaitest.SevilaiVehAddTest.sevilaiadd")
     public void sevilaivehicleEdit() throws Throwable {
         String testCaseID = "SVE_TC_01";
        
@@ -80,7 +80,7 @@ public class SevilaiVehicleEditTest extends LoginTest {
         }
     }
 
-    @Test(dependsOnMethods = "sevilaiadd")
+    @Test(dependsOnMethods = "sevilaitest.SevilaiVehAddTest.sevilaiadd")
     public void sevilaivehicleRemoveAccess() throws Throwable {
         String testCaseID = "SVRA_TC_01";
         Actions actions = new Actions(driver);
