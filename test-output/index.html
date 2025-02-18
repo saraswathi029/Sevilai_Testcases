@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-HappyFlowSuite" class="navigator-link">
-              <span class="suite-name border-passed">HappyFlowSuite</span>
+              <span class="suite-name border-failed">HappyFlowSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-HappyFlowSuite" class="navigator-link ">
-                    <span>C:\Users\KADIT\eclipse-workspace1\Sevillai_Testing_Flow\src\test\resources\HappyFlowSuite.xml</span>
+                    <span>C:\Users\KADIT\eclipse-workspace1\Sevillai_Testing_Flow\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-HappyFlowSuite" class="hide-methods failed suite-HappyFlowSuite"> (hide)</a> <!-- hide-methods failed suite-HappyFlowSuite -->
+                      <a href="#" panel-name="suite-HappyFlowSuite" class="show-methods failed suite-HappyFlowSuite"> (show)</a> <!-- show-methods failed suite-HappyFlowSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-HappyFlowSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HappyFlowSuite" title="sevilaitest.SevilaiVehicleEditTest" class="method navigator-link" hash-for-method="sevilaivehicleRemoveAccess">sevilaivehicleRemoveAccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-HappyFlowSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +117,12 @@
                     <div class="method-list-content passed suite-HappyFlowSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-HappyFlowSuite" title="sevilai_Test.Dummy_Test" class="method navigator-link" hash-for-method="verifySuiteExecution">verifySuiteExecution</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-HappyFlowSuite" title="sevilaitest.SevilaiVehAddTest" class="method navigator-link" hash-for-method="sevilaiadd">sevilaiadd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HappyFlowSuite" title="sevilaitest.SevilaiVehicleEditTest" class="method navigator-link" hash-for-method="sevilaivehicleEdit">sevilaivehicleEdit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-HappyFlowSuite -->
@@ -118,17 +137,97 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-HappyFlowSuite" class="panel HappyFlowSuite">
-          <div class="suite-HappyFlowSuite-class-passed">
+          <div class="suite-HappyFlowSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">sevilai_Test.Dummy_Test</span>
+              <img src="failed.png"/>
+              <span class="class-name">sevilaitest.SevilaiVehicleEditTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySuiteExecution">
-                  </a> <!-- verifySuiteExecution -->
-                  <span class="method-name">verifySuiteExecution</span>
+                  <a name="sevilaivehicleRemoveAccess">
+                  </a> <!-- sevilaivehicleRemoveAccess -->
+                  <span class="method-name">sevilaivehicleRemoveAccess</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()=&apos;vehi2&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at sevilaitest.SevilaiVehicleEditTest.sevilaivehicleRemoveAccess(SevilaiVehicleEditTest.java:89)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;vehi2&apos;]&quot;}
+  (Session info: chrome=133.0.6943.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [481e7f37ff5717fe16dfd1bc35a77a89, findElement {using=xpath, value=//span[text()=&apos;vehi2&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61962/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 481e7f37ff5717fe16dfd1bc35a77a89
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 16 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HappyFlowSuite-class-failed -->
+          <div class="suite-HappyFlowSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sevilaitest.SevilaiVehicleEditTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sevilaivehicleEdit">
+                  </a> <!-- sevilaivehicleEdit -->
+                  <span class="method-name">sevilaivehicleEdit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HappyFlowSuite-class-passed -->
+          <div class="suite-HappyFlowSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sevilaitest.SevilaiVehAddTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sevilaiadd">
+                  </a> <!-- sevilaiadd -->
+                  <span class="method-name">sevilaiadd</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,16 +235,18 @@
         </div> <!-- panel HappyFlowSuite -->
         <div panel-name="test-xml-HappyFlowSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\KADIT\eclipse-workspace1\Sevillai_Testing_Flow\src\test\resources\HappyFlowSuite.xml</span>
+            <span class="header-content">C:\Users\KADIT\eclipse-workspace1\Sevillai_Testing_Flow\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;HappyFlowSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;SevilaiHappyFlow&quot;&gt;
+&lt;suite parallel=&quot;methods&quot; name=&quot;HappyFlowSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;SevilaiHappyFlow&quot; verbose=&quot;3&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;sevilai_Test.Dummy_Test&quot;/&gt;
+      &lt;class name=&quot;sevilaitest.LoginTest&quot;/&gt;
+      &lt;class name=&quot;sevilaitest.SevilaiVehAddTest&quot;/&gt;
+      &lt;class name=&quot;sevilaitest.SevilaiVehicleEditTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SevilaiHappyFlow --&gt;
 &lt;/suite&gt; &lt;!-- HappyFlowSuite --&gt;
@@ -159,7 +260,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">SevilaiHappyFlow (1 class)</span>
+                <span class="test-name">SevilaiHappyFlow (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +286,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySuiteExecution')
-data.setCell(0, 2, 'sevilai_Test.Dummy_Test')
-data.setCell(0, 3, 9);
+data.setCell(0, 1, 'sevilaivehicleEdit')
+data.setCell(0, 2, 'sevilaitest.SevilaiVehicleEditTest')
+data.setCell(0, 3, 74600);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'sevilaivehicleRemoveAccess')
+data.setCell(1, 2, 'sevilaitest.SevilaiVehicleEditTest')
+data.setCell(1, 3, 61858);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sevilaiadd')
+data.setCell(2, 2, 'sevilaitest.SevilaiVehAddTest')
+data.setCell(2, 3, 31288);
 window.suiteTableData['HappyFlowSuite']= { tableData: data, tableDiv: 'times-div-HappyFlowSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 ms</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-HappyFlowSuite">
               </div> <!-- times-div-HappyFlowSuite -->
             </div> <!-- times-div -->
@@ -205,13 +314,60 @@ return data;
             <span class="header-content">Reporter output for HappyFlowSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">sevilaivehicleEdit</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">PASSED: Vehicle page is successfully displayed.</span>
+                <span class="reporter-method-output">Edit button clicked successfully!</span>
+                <span class="reporter-method-output">Toast Message: Success
+Vehicle updated successfully 12%</span>
+                <span class="reporter-method-output">Test Case SVE_TC_01 Passed: Vehicle updated successfully.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">sevilaiadd</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">PASSED: Vehicle page is successfully displayed.</span>
+                <span class="reporter-method-output">Toast Message: Success
+Vehicle added successfully 12%</span>
+                <span class="reporter-method-output">Vehicle with capacity 20 and number vehi1 added successfully.</span>
+                <span class="reporter-method-output">Toast Message: Success
+Vehicle added successfully 12%</span>
+                <span class="reporter-method-output">Vehicle with capacity 20 and number vehi2 added successfully.</span>
+                <span class="reporter-method-output">Toast Message: Success
+Vehicle added successfully 13%</span>
+                <span class="reporter-method-output">Vehicle with capacity 30 and number vehi3 added successfully.</span>
+                <span class="reporter-method-output">Toast Message: Success
+Vehicle added successfully 13%</span>
+                <span class="reporter-method-output">Vehicle with capacity 40 and number vehi4 added successfully.</span>
+                <span class="reporter-method-output">Test Case SVA_TC_01 Passed: All vehicles added successfully.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-HappyFlowSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sevilaitest.SevilaiVehicleEditTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">teardown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sevilaitest.SevilaiVehAddTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">teardown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-HappyFlowSuite" class="panel">
@@ -220,15 +376,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">sevilai_Test.Dummy_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">sevilaitest.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sevilaitest.SevilaiVehAddTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">checkLogin</span>
+                <span class="method-start">6680 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifySuiteExecution</span>
-                <span class="method-start">63 ms</span>
+                <span class="method-name">sevilaiadd</span>
+                <span class="method-start">6702 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sevilaitest.SevilaiVehicleEditTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">checkLogin</span>
+                <span class="method-start">38016 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">sevilaivehicleEdit</span>
+                <span class="method-start">38022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sevilaivehicleRemoveAccess</span>
+                <span class="method-start">38022 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sevilaitest.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">112718 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

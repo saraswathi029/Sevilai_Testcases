@@ -19,7 +19,7 @@ public class SevilaiVehicleEditTest extends LoginTest {
     }
    
 
-    @Test(dependsOnMethods = "sevilaitest.SevilaiVehAddTest.sevilaiadd")
+    @Test(dependsOnMethods = "sevilaiadd")
     public void sevilaivehicleEdit() throws Throwable {
         String testCaseID = "SVE_TC_01";
        
@@ -80,10 +80,15 @@ public class SevilaiVehicleEditTest extends LoginTest {
         }
     }
 
-    @Test(dependsOnMethods = "sevilaitest.SevilaiVehAddTest.sevilaiadd")
+    @Test(dependsOnMethods = "sevilaivehicleEdit")
     public void sevilaivehicleRemoveAccess() throws Throwable {
         String testCaseID = "SVRA_TC_01";
         Actions actions = new Actions(driver);
+        WebElement searchElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[aria-label='Search...']")));
+        searchElement.click();
+        searchElement.sendKeys(Keys.CONTROL + "a"); // Select all text
+        searchElement.sendKeys(Keys.BACK_SPACE); 
+        searchElement.sendKeys("vehi2");
 
         // Locate the vehicle
         WebElement vehicle = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='vehi2']")));
