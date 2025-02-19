@@ -35,7 +35,7 @@ public class LoginTest {
         }
     }
     
-   
+ 
     public void performLogin() throws Throwable {
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 

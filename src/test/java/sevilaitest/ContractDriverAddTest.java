@@ -19,7 +19,7 @@ public class ContractDriverAddTest extends LoginTest {
         }
     }
 
-    @Test(description = "CDA_TC_02: Validate driver is added successfully")
+    @Test(description = "CDA_TC_02: Validate driver is added successfully" , dependsOnMethods = "sevilaidriveredit")
     public void contractdriveradd() throws Throwable  {
         String testCaseID = "CDA_TC_02"; // Assign test case ID
         

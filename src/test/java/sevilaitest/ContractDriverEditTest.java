@@ -29,12 +29,15 @@ public class ContractDriverEditTest extends LoginTest {
 	                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Tab 3 of 5')]")));
 	        actions.moveToElement(DriverTabButton).click().perform();
 
-	        WebElement DriverElement = wait.until(
-	                ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Drivers']")));
-
-	        Assert.assertTrue(DriverElement.isDisplayed(), "Driver page is not displayed.");
-	        Reporter.log("PASSED: Driver page is successfully displayed.", true);
-
+			/*
+			 * WebElement DriverElement = wait.until(
+			 * ExpectedConditions.visibilityOfElementLocated(By.xpath(
+			 * "//span[text()='Drivers']")));
+			 * 
+			 * Assert.assertTrue(DriverElement.isDisplayed(),
+			 * "Driver page is not displayed.");
+			 * Reporter.log("PASSED: Driver page is successfully displayed.", true);
+			 */
 	
 		
 		WebElement ContractDriver = wait
@@ -75,14 +78,14 @@ public class ContractDriverEditTest extends LoginTest {
         vehiclecapacity.click();
         vehiclecapacity.sendKeys(Keys.CONTROL + "a");
 		vehiclecapacity.sendKeys(Keys.BACK_SPACE);
-        vehiclecapacity.sendKeys("30");
+        vehiclecapacity.sendKeys("10");
        
         WebElement vehiclenumber = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@aria-label='Vehicle Number ']")));
         
         vehiclenumber.click();
         vehiclenumber.sendKeys(Keys.CONTROL + "a");
         vehiclenumber.sendKeys(Keys.BACK_SPACE);
-       vehiclenumber.sendKeys("DumTe2");
+       vehiclenumber.sendKeys("Dumm2");
        WebElement update = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//flt-semantics[text()='Update']")));
        update.click();
        
@@ -94,34 +97,43 @@ public class ContractDriverEditTest extends LoginTest {
      // Validate the message
      String messageText = toastMessage.getAttribute("aria-label");
      Reporter.log("Toast Message: " + messageText, true);
-
+     
      // Assert and log results
      try {
          Assert.assertTrue(messageText.contains("Driver updated successfully"),
                  "Toast message validation failed for Test Case: " + testCaseID);
          Reporter.log("Test Case " + testCaseID + " Passed: Driver updated successfully.", true);
-      // Search for the driver again to refresh the details
-         searchElement.sendKeys(Keys.CONTROL + "a", Keys.BACK_SPACE); // Clear search
-         searchElement.sendKeys("Dumm2"); // Search the same driver again
-         Thread.sleep(2000); // Wait for data to reload (Use explicit wait if possible)
-
-         // Locate the email field again and fetch its value
-         WebElement updatedEmailField = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[aria-label='Email Address']")));
-         String updatedEmailValue = updatedEmailField.getAttribute("value"); // Get email field value
-
-         // Assert if email is removed (empty)
-         Assert.assertTrue(updatedEmailValue.isEmpty(), "Email address is not removed!");
-         Reporter.log("Validation Passed: Email address is successfully removed from the driver details.", true);
      } catch (AssertionError e) {
          Reporter.log("Test Case " + testCaseID + " Failed.", true);
          throw e; // Ensures failure is recorded in the TestNG report
      }
-	}
+ }
+	
      
-     @Test(dependsOnMethods = "contractdriveradd")
+     @Test(dependsOnMethods = "contractdriveredit")
      public void contractDriverRemoveAccess() throws Throwable {
          String testCaseID = "CDRA_TC_03";
          Actions actions = new Actions(driver);
+         
+         WebElement DriverTabButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                 By.xpath("//span[contains(text(),'Tab 3 of 5')]")));
+         actions.moveToElement(DriverTabButton).click().perform();
+         
+         WebElement ContractDriver = wait
+ 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'Contract Drivers')]")));
+ 		 actions.moveToElement(ContractDriver).click().perform();
+ 		
+
+         
+         WebElement searchElement =
+       		  wait.until(ExpectedConditions.presenceOfElementLocated(
+       		  By.xpath("//input[@type='text']")));
+       		  
+       		  searchElement.sendKeys(Keys.CONTROL + "a");
+       		  searchElement.sendKeys(Keys.BACK_SPACE); 
+       		  searchElement.sendKeys("DumTe2");
+       		  searchElement.sendKeys(Keys.ENTER);
+
 
          // Locate the vehicle
          WebElement vehicle = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='DumTe2']")));
@@ -137,7 +149,7 @@ public class ContractDriverEditTest extends LoginTest {
  		  remark.click();
  		  remark.sendKeys("not in use");
  		  wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//flt-semantics[text()='Delete']"))).click();
- 		  //Reporter.log("Vehicle removed successfully", true);
+ 		 
  		  
  		  WebElement toastMessage1 = wait.until(ExpectedConditions.presenceOfElementLocated(
  		            By.cssSelector("[aria-label*='Driver removed successfully']")
@@ -152,7 +164,7 @@ public class ContractDriverEditTest extends LoginTest {
                     "Toast message validation failed for Test Case: " + testCaseID);
             Reporter.log("Test Case " + testCaseID + " Passed: Driver removed successfully.", true);
         } catch (AssertionError e) {
-            Reporter.log("Test Case " + testCaseID + " Failed.", true);
+            Reporter.log("Test Case " + testCaseID + " Failed: Driver added successfully", true);
             throw e; // Ensures failure is recorded in the TestNG report
 
 

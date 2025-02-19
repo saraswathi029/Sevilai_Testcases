@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SevilaiHappyFlow</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/2</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 18 16:09:22 IST 2025</td>
+<td>Started on:</td><td>Wed Feb 19 01:27:33 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>105 seconds (105983 ms)</td>
+<tr><td>Total time:</td><td>163 seconds (163722 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,35 +76,26 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sevilaitest.SevilaiVehicleEditTest.sevilaivehicleRemoveAccess()'><b>sevilaivehicleRemoveAccess</b><br>Test class: sevilaitest.SevilaiVehicleEditTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()=&apos;vehi2&apos;] (tried for 60 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at sevilaitest.SevilaiVehicleEditTest.sevilaivehicleRemoveAccess(SevilaiVehicleEditTest.java:89)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;vehi2&apos;]&quot;}
+<td title='sevilaitest.SevilaiDriverEditTest.sevilaidriveredit()'><b>sevilaidriveredit</b><br>Test class: sevilaitest.SevilaiDriverEditTest<br>Test method: SDA_TC_02: Validate driver is added successfully<br/>
+<a href="#Output-414765427" onClick='toggleBox("Output-414765427", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-414765427" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-414765427">
+Toast Message: Success
+Driver updated successfully 11%<br/>
+Test Case SDA_TC_02 Passed: Driver updated successfully.<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=133.0.6943.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [481e7f37ff5717fe16dfd1bc35a77a89, findElement {using=xpath, value=//span[text()=&apos;vehi2&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61962/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 481e7f37ff5717fe16dfd1bc35a77a89
+Command: [35bf68ac69d769fd65ce2d51c3b320ce, sendKeysToElement {id=f.C02B4C21FE4C187C93BEDDB110EF5E07.d.4B6F27CBE1FDFB0EA7EBCDF7CAF1438A.e.146, value=[Ljava.lang.CharSequence;@38eb0f4d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64739/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (35bf68ac69d769fd65ce2d51c3b320ce)] -&gt; css selector: [aria-label=&apos;Search...&apos;]]
+Session ID: 35bf68ac69d769fd65ce2d51c3b320ce
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -117,19 +108,9 @@ Session ID: 481e7f37ff5717fe16dfd1bc35a77a89
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 16 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace780922079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace780922079'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()=&apos;vehi2&apos;] (tried for 60 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at sevilaitest.SevilaiVehicleEditTest.sevilaivehicleRemoveAccess(SevilaiVehicleEditTest.java:89)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at sevilaitest.SevilaiDriverEditTest.sevilaidriveredit(SevilaiDriverEditTest.java:91)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,18 +123,33 @@ Session ID: 481e7f37ff5717fe16dfd1bc35a77a89
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;vehi2&apos;]&quot;}
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace414765427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace414765427'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=133.0.6943.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [481e7f37ff5717fe16dfd1bc35a77a89, findElement {using=xpath, value=//span[text()=&apos;vehi2&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61962/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 481e7f37ff5717fe16dfd1bc35a77a89
+Command: [35bf68ac69d769fd65ce2d51c3b320ce, sendKeysToElement {id=f.C02B4C21FE4C187C93BEDDB110EF5E07.d.4B6F27CBE1FDFB0EA7EBCDF7CAF1438A.e.146, value=[Ljava.lang.CharSequence;@38eb0f4d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64739/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (35bf68ac69d769fd65ce2d51c3b320ce)] -&gt; css selector: [aria-label=&apos;Search...&apos;]]
+Session ID: 35bf68ac69d769fd65ce2d51c3b320ce
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -166,17 +162,150 @@ Session ID: 481e7f37ff5717fe16dfd1bc35a77a89
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 16 more
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at sevilaitest.SevilaiDriverEditTest.sevilaidriveredit(SevilaiDriverEditTest.java:91)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>61</td>
-<td>sevilaitest.SevilaiVehicleEditTest@206a70ef</td></tr>
+<td>14</td>
+<td>sevilaitest.SevilaiDriverEditTest@5b12b668</td></tr>
+<tr>
+<td title='sevilaitest.ContractVehicleEditTest.editcontractvehicle()'><b>editcontractvehicle</b><br>Test class: sevilaitest.ContractVehicleEditTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span style=&quot;display: inline-block; white-space: nowrap; transform-origin: 0px 0px 0px; pointer-events: none; transform: scale(0.919417, 2.66667);&quot;&gt;...&lt;/span&gt; is not clickable at point (305, 129). Other element would receive the click: &lt;flt-semantics id=&quot;flt-semantic-node-50&quot; tabindex=&quot;0&quot; flt-tappable=&quot;&quot; style=&quot;position: absolute; overflow: visible; width: 167.334px; height: 48px; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 206.182, 0); pointer-events: all; z-index: 2;&quot;&gt;...&lt;/flt-semantics&gt;
+  (Session info: chrome=133.0.6943.98)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35bf68ac69d769fd65ce2d51c3b320ce, clickElement {id=f.C02B4C21FE4C187C93BEDDB110EF5E07.d.4B6F27CBE1FDFB0EA7EBCDF7CAF1438A.e.384}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64739/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (35bf68ac69d769fd65ce2d51c3b320ce)] -&gt; xpath: //span[contains(text(), &apos;Contract Vehicle&apos;)]]
+Session ID: 35bf68ac69d769fd65ce2d51c3b320ce
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at sevilaitest.ContractVehicleEditTest.editcontractvehicle(ContractVehicleEditTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace529893402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace529893402'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span style=&quot;display: inline-block; white-space: nowrap; transform-origin: 0px 0px 0px; pointer-events: none; transform: scale(0.919417, 2.66667);&quot;&gt;...&lt;/span&gt; is not clickable at point (305, 129). Other element would receive the click: &lt;flt-semantics id=&quot;flt-semantic-node-50&quot; tabindex=&quot;0&quot; flt-tappable=&quot;&quot; style=&quot;position: absolute; overflow: visible; width: 167.334px; height: 48px; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 206.182, 0); pointer-events: all; z-index: 2;&quot;&gt;...&lt;/flt-semantics&gt;
+  (Session info: chrome=133.0.6943.98)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35bf68ac69d769fd65ce2d51c3b320ce, clickElement {id=f.C02B4C21FE4C187C93BEDDB110EF5E07.d.4B6F27CBE1FDFB0EA7EBCDF7CAF1438A.e.384}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64739/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (35bf68ac69d769fd65ce2d51c3b320ce)] -&gt; xpath: //span[contains(text(), &apos;Contract Vehicle&apos;)]]
+Session ID: 35bf68ac69d769fd65ce2d51c3b320ce
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at sevilaitest.ContractVehicleEditTest.editcontractvehicle(ContractVehicleEditTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>sevilaitest.ContractVehicleEditTest@7586beff</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -187,33 +316,46 @@ Session ID: 481e7f37ff5717fe16dfd1bc35a77a89
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sevilaitest.SevilaiVehicleEditTest.sevilaivehicleEdit()'><b>sevilaivehicleEdit</b><br>Test class: sevilaitest.SevilaiVehicleEditTest<br/>
-<a href="#Output-68686795" onClick='toggleBox("Output-68686795", this, "Show output", "Hide output");'>Show output</a>
+<td title='sevilaitest.ContractDriverEditTest.contractDriverRemoveAccess()'><b>contractDriverRemoveAccess</b><br>Test class: sevilaitest.ContractDriverEditTest<br/>
+<a href="#Output-1020421154" onClick='toggleBox("Output-1020421154", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-68686795" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-68686795">
-PASSED: Vehicle page is successfully displayed.<br/>
-Edit button clicked successfully!<br/>
+<a href="#Output-1020421154" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1020421154">
+Remove button clicked successfully!<br/>
 Toast Message: Success
-Vehicle updated successfully 12%<br/>
-Test Case SVE_TC_01 Passed: Vehicle updated successfully.<br/>
+Driver removed successfully 16%<br/>
+Test Case CDRA_TC_03 Passed: Driver removed successfully.<br/>
 </div>
 </td>
 <td></td>
-<td>74</td>
-<td>sevilaitest.SevilaiVehicleEditTest@206a70ef</td></tr>
+<td>6</td>
+<td>sevilaitest.ContractDriverEditTest@4c12331b</td></tr>
+<tr>
+<td title='sevilaitest.ContractDriverEditTest.contractdriveredit()'><b>contractdriveredit</b><br>Test class: sevilaitest.ContractDriverEditTest<br>Test method: CDA_TC_02: Validate driver is added successfully<br/>
+<a href="#Output-423870962" onClick='toggleBox("Output-423870962", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-423870962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-423870962">
+Toast Message: Success
+Driver updated successfully 12%<br/>
+Test Case CDA_TC_02 Passed: Driver updated successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>sevilaitest.ContractDriverEditTest@4c12331b</td></tr>
 <tr>
 <td title='sevilaitest.SevilaiVehAddTest.sevilaiadd()'><b>sevilaiadd</b><br>Test class: sevilaitest.SevilaiVehAddTest<br/>
-<a href="#Output-1721660614" onClick='toggleBox("Output-1721660614", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-203936099" onClick='toggleBox("Output-203936099", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1721660614" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1721660614">
+<a href="#Output-203936099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-203936099">
 PASSED: Vehicle page is successfully displayed.<br/>
 Toast Message: Success
 Vehicle added successfully 12%<br/>
 Vehicle with capacity 20 and number vehi1 added successfully.<br/>
 Toast Message: Success
-Vehicle added successfully 12%<br/>
+Vehicle added successfully 13%<br/>
 Vehicle with capacity 20 and number vehi2 added successfully.<br/>
 Toast Message: Success
 Vehicle added successfully 13%<br/>
@@ -226,7 +368,180 @@ Test Case SVA_TC_01 Passed: All vehicles added successfully.<br/>
 </td>
 <td></td>
 <td>31</td>
-<td>sevilaitest.SevilaiVehAddTest@c730b35</td></tr>
+<td>sevilaitest.SevilaiVehAddTest@6025e1b6</td></tr>
+<tr>
+<td title='sevilaitest.SevilaiVehicleEditTest.sevilaivehicleRemoveAccess()'><b>sevilaivehicleRemoveAccess</b><br>Test class: sevilaitest.SevilaiVehicleEditTest<br/>
+<a href="#Output-1020397237" onClick='toggleBox("Output-1020397237", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1020397237" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1020397237">
+Remove button clicked successfully!<br/>
+Vehicle removed successfully<br/>
+Toast Message: Success
+Vehicle removed successfully 14%<br/>
+Test Case SVRA_TC_01 Passed: Vehicle removed successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>sevilaitest.SevilaiVehicleEditTest@4c402120</td></tr>
+<tr>
+<td title='sevilaitest.ContractDriverAddTest.contractdriveradd()'><b>contractdriveradd</b><br>Test class: sevilaitest.ContractDriverAddTest<br>Test method: CDA_TC_02: Validate driver is added successfully<br/>
+<a href="#Output-880934808" onClick='toggleBox("Output-880934808", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-880934808" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-880934808">
+PASSED: Driver page is successfully displayed.<br/>
+Toast Message: Success
+Driver added successfully 11%<br/>
+Test Case CDA_TC_02 Passed: Driver added successfully.<br/>
+Toast Message: Success
+Driver added successfully 14%<br/>
+Test Case CDA_TC_02 Passed: Driver added successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>sevilaitest.ContractDriverAddTest@1165b38</td></tr>
+<tr>
+<td title='sevilaitest.SevilaiDriverAddTest.sevilaidriveradd()'><b>sevilaidriveradd</b><br>Test class: sevilaitest.SevilaiDriverAddTest<br>Test method: SDA_TC_01: Validate driver is added successfully<br/>
+<a href="#Output-2144496344" onClick='toggleBox("Output-2144496344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2144496344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2144496344">
+PASSED: Driver page is successfully displayed.<br/>
+Toast Message: Success
+Driver added successfully 14%<br/>
+Test Case SDA_TC_01 Passed: Driver added successfully.<br/>
+Toast Message: Success
+Driver added successfully 14%<br/>
+Test Case SDA_TC_01 Passed: Driver added successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>sevilaitest.SevilaiDriverAddTest@327514f</td></tr>
+<tr>
+<td title='sevilaitest.SevilaiVehicleEditTest.sevilaivehicleedit()'><b>sevilaivehicleedit</b><br>Test class: sevilaitest.SevilaiVehicleEditTest<br/>
+<a href="#Output-380494131" onClick='toggleBox("Output-380494131", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-380494131" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-380494131">
+PASSED: Vehicle page is successfully displayed.<br/>
+Edit button clicked successfully!<br/>
+Toast Message: Success
+Vehicle updated successfully 41%<br/>
+Test Case SVE_TC_01 Passed: Vehicle updated successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>sevilaitest.SevilaiVehicleEditTest@4c402120</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='sevilaitest.SevilaiDriverEditTest.sevilaivehicleRemoveAccess()'><b>sevilaivehicleRemoveAccess</b><br>Test class: sevilaitest.SevilaiDriverEditTest</td>
+<td><div><pre>java.lang.Throwable: Method sevilaitest.SevilaiDriverEditTest.sevilaivehicleRemoveAccess() on instance sevilaitest.SevilaiDriverEditTest@5b12b668 depends on not successfully finished methods 
+[sevilaitest.SevilaiDriverEditTest.sevilaidriveredit() on instance sevilaitest.SevilaiDriverEditTest@5b12b668]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1177852821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1177852821'><pre>java.lang.Throwable: Method sevilaitest.SevilaiDriverEditTest.sevilaivehicleRemoveAccess() on instance sevilaitest.SevilaiDriverEditTest@5b12b668 depends on not successfully finished methods 
+[sevilaitest.SevilaiDriverEditTest.sevilaidriveredit() on instance sevilaitest.SevilaiDriverEditTest@5b12b668]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>sevilaitest.SevilaiDriverEditTest@5b12b668</td></tr>
+<tr>
+<td title='sevilaitest.ContractVehicleEditTest.contractvehicleRemoveAccess()'><b>contractvehicleRemoveAccess</b><br>Test class: sevilaitest.ContractVehicleEditTest</td>
+<td><div><pre>java.lang.Throwable: Method sevilaitest.ContractVehicleEditTest.contractvehicleRemoveAccess() on instance sevilaitest.ContractVehicleEditTest@7586beff depends on not successfully finished methods 
+[sevilaitest.ContractVehicleEditTest.editcontractvehicle() on instance sevilaitest.ContractVehicleEditTest@7586beff]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1933493643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1933493643'><pre>java.lang.Throwable: Method sevilaitest.ContractVehicleEditTest.contractvehicleRemoveAccess() on instance sevilaitest.ContractVehicleEditTest@7586beff depends on not successfully finished methods 
+[sevilaitest.ContractVehicleEditTest.editcontractvehicle() on instance sevilaitest.ContractVehicleEditTest@7586beff]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>sevilaitest.ContractVehicleEditTest@7586beff</td></tr>
 </table><p>
 </body>
 </html>

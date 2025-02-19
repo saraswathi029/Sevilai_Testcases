@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="methods" name="Failed suite [HappyFlowSuite]" guice-stage="DEVELOPMENT" verbose="3">
-  <test thread-count="5" parallel="methods" name="SevilaiHappyFlow(failed)" verbose="3">
+<suite name="Failed suite [HappyFlowSuite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test thread-count="5" name="SevilaiHappyFlow(failed)" verbose="3">
     <classes>
       <class name="sevilaitest.SevilaiVehicleEditTest">
         <methods>
-          <include name="sevilaivehicleRemoveAccess"/>
+          <include name="sevilaivehicleedit"/>
           <include name="checkLogin"/>
           <include name="setup"/>
           <include name="teardown"/>
@@ -19,6 +19,40 @@
           <include name="sevilaiadd"/>
         </methods>
       </class> <!-- sevilaitest.SevilaiVehAddTest -->
+      <class name="sevilaitest.ContractVehicleEditTest">
+        <methods>
+          <include name="setup"/>
+          <include name="contractvehicleRemoveAccess"/>
+          <include name="teardown"/>
+          <include name="checkLogin"/>
+          <include name="editcontractvehicle"/>
+        </methods>
+      </class> <!-- sevilaitest.ContractVehicleEditTest -->
+      <class name="sevilaitest.SevilaiDriverAddTest">
+        <methods>
+          <include name="setup"/>
+          <include name="checkLogin"/>
+          <include name="teardown"/>
+          <include name="sevilaidriveradd"/>
+        </methods>
+      </class> <!-- sevilaitest.SevilaiDriverAddTest -->
+      <class name="sevilaitest.SevilaiDriverEditTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="sevilaidriveredit"/>
+          <include name="sevilaivehicleRemoveAccess"/>
+          <include name="checkLogin"/>
+        </methods>
+      </class> <!-- sevilaitest.SevilaiDriverEditTest -->
+      <class name="sevilaitest.ContractDriverAddTest">
+        <methods>
+          <include name="setup"/>
+          <include name="contractdriveradd"/>
+          <include name="teardown"/>
+          <include name="checkLogin"/>
+        </methods>
+      </class> <!-- sevilaitest.ContractDriverAddTest -->
     </classes>
   </test> <!-- SevilaiHappyFlow(failed) -->
 </suite> <!-- Failed suite [HappyFlowSuite] -->

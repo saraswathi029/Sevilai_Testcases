@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="11" passed="7" failed="2" skipped="2">
   <reporter-output>
     <line>
       <![CDATA[PASSED: Vehicle page is successfully displayed.]]>
@@ -13,7 +13,7 @@ Vehicle added successfully 12%]]>
     </line>
     <line>
       <![CDATA[Toast Message: Success
-Vehicle added successfully 12%]]>
+Vehicle added successfully 13%]]>
     </line>
     <line>
       <![CDATA[Vehicle with capacity 20 and number vehi2 added successfully.]]>
@@ -43,82 +43,117 @@ Vehicle added successfully 13%]]>
     </line>
     <line>
       <![CDATA[Toast Message: Success
-Vehicle updated successfully 12%]]>
+Vehicle updated successfully 41%]]>
     </line>
     <line>
       <![CDATA[Test Case SVE_TC_01 Passed: Vehicle updated successfully.]]>
     </line>
+    <line>
+      <![CDATA[Remove button clicked successfully!]]>
+    </line>
+    <line>
+      <![CDATA[Vehicle removed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Toast Message: Success
+Vehicle removed successfully 14%]]>
+    </line>
+    <line>
+      <![CDATA[Test Case SVRA_TC_01 Passed: Vehicle removed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[PASSED: Driver page is successfully displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Toast Message: Success
+Driver added successfully 14%]]>
+    </line>
+    <line>
+      <![CDATA[Test Case SDA_TC_01 Passed: Driver added successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Toast Message: Success
+Driver added successfully 14%]]>
+    </line>
+    <line>
+      <![CDATA[Test Case SDA_TC_01 Passed: Driver added successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Toast Message: Success
+Driver updated successfully 11%]]>
+    </line>
+    <line>
+      <![CDATA[Test Case SDA_TC_02 Passed: Driver updated successfully.]]>
+    </line>
+    <line>
+      <![CDATA[PASSED: Driver page is successfully displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Toast Message: Success
+Driver added successfully 11%]]>
+    </line>
+    <line>
+      <![CDATA[Test Case CDA_TC_02 Passed: Driver added successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Toast Message: Success
+Driver added successfully 14%]]>
+    </line>
+    <line>
+      <![CDATA[Test Case CDA_TC_02 Passed: Driver added successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Toast Message: Success
+Driver updated successfully 12%]]>
+    </line>
+    <line>
+      <![CDATA[Test Case CDA_TC_02 Passed: Driver updated successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Remove button clicked successfully!]]>
+    </line>
+    <line>
+      <![CDATA[Toast Message: Success
+Driver removed successfully 16%]]>
+    </line>
+    <line>
+      <![CDATA[Test Case CDRA_TC_03 Passed: Driver removed successfully.]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-02-18T16:09:22 IST" name="HappyFlowSuite" finished-at="2025-02-18T16:11:08 IST" duration-ms="105983">
+  <suite started-at="2025-02-19T01:27:33 IST" name="HappyFlowSuite" finished-at="2025-02-19T01:30:17 IST" duration-ms="163722">
     <groups>
     </groups>
-    <test started-at="2025-02-18T16:09:22 IST" name="SevilaiHappyFlow" finished-at="2025-02-18T16:11:08 IST" duration-ms="105983">
-      <class name="sevilaitest.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:sevilaitest.LoginTest@5e0e82ae]" started-at="2025-02-18T16:09:16 IST" name="setup" finished-at="2025-02-18T16:09:22 IST" duration-ms="6645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:sevilaitest.LoginTest@5e0e82ae]" started-at="2025-02-18T16:11:08 IST" name="teardown" finished-at="2025-02-18T16:11:09 IST" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- sevilaitest.LoginTest -->
-      <class name="sevilaitest.SevilaiVehicleEditTest">
-        <test-method is-config="true" signature="checkLogin()[pri:0, instance:sevilaitest.SevilaiVehicleEditTest@206a70ef]" started-at="2025-02-18T16:09:54 IST" name="checkLogin" finished-at="2025-02-18T16:09:54 IST" duration-ms="2" status="PASS">
+    <test started-at="2025-02-19T01:27:33 IST" name="SevilaiHappyFlow" finished-at="2025-02-19T01:30:17 IST" duration-ms="163722">
+      <class name="sevilaitest.SevilaiDriverEditTest">
+        <test-method is-config="true" signature="checkLogin()[pri:0, instance:sevilaitest.SevilaiDriverEditTest@5b12b668]" started-at="2025-02-19T01:29:00 IST" name="checkLogin" finished-at="2025-02-19T01:29:00 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogin -->
-        <test-method signature="sevilaivehicleEdit()[pri:0, instance:sevilaitest.SevilaiVehicleEditTest@206a70ef]" started-at="2025-02-18T16:09:54 IST" name="sevilaivehicleEdit" finished-at="2025-02-18T16:11:08 IST" depends-on-methods="sevilaitest.SevilaiVehAddTest.sevilaiadd" duration-ms="74600" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[PASSED: Vehicle page is successfully displayed.]]>
-            </line>
-            <line>
-              <![CDATA[Edit button clicked successfully!]]>
-            </line>
-            <line>
-              <![CDATA[Toast Message: Success
-Vehicle updated successfully 12%]]>
-            </line>
-            <line>
-              <![CDATA[Test Case SVE_TC_01 Passed: Vehicle updated successfully.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- sevilaivehicleEdit -->
-        <test-method signature="sevilaivehicleRemoveAccess()[pri:0, instance:sevilaitest.SevilaiVehicleEditTest@206a70ef]" started-at="2025-02-18T16:09:54 IST" name="sevilaivehicleRemoveAccess" finished-at="2025-02-18T16:10:56 IST" depends-on-methods="sevilaitest.SevilaiVehAddTest.sevilaiadd" duration-ms="61858" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="sevilaidriveredit()[pri:0, instance:sevilaitest.SevilaiDriverEditTest@5b12b668]" started-at="2025-02-19T01:29:00 IST" name="sevilaidriveredit" description="SDA_TC_02: Validate driver is added successfully" finished-at="2025-02-19T01:29:14 IST" depends-on-methods="sevilaidriveradd" duration-ms="14078" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()='vehi2'] (tried for 60 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[text()='vehi2'] (tried for 60 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at sevilaitest.SevilaiVehicleEditTest.sevilaivehicleRemoveAccess(SevilaiVehicleEditTest.java:89)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='vehi2']"}
+              <![CDATA[stale element reference: stale element not found in the current frame
   (Session info: chrome=133.0.6943.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [481e7f37ff5717fe16dfd1bc35a77a89, findElement {using=xpath, value=//span[text()='vehi2']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61962/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 481e7f37ff5717fe16dfd1bc35a77a89
+Command: [35bf68ac69d769fd65ce2d51c3b320ce, sendKeysToElement {id=f.C02B4C21FE4C187C93BEDDB110EF5E07.d.4B6F27CBE1FDFB0EA7EBCDF7CAF1438A.e.146, value=[Ljava.lang.CharSequence;@38eb0f4d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64739/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (35bf68ac69d769fd65ce2d51c3b320ce)] -> css selector: [aria-label='Search...']]
+Session ID: 35bf68ac69d769fd65ce2d51c3b320ce]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=133.0.6943.98)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35bf68ac69d769fd65ce2d51c3b320ce, sendKeysToElement {id=f.C02B4C21FE4C187C93BEDDB110EF5E07.d.4B6F27CBE1FDFB0EA7EBCDF7CAF1438A.e.146, value=[Ljava.lang.CharSequence;@38eb0f4d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64739/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (35bf68ac69d769fd65ce2d51c3b320ce)] -> css selector: [aria-label='Search...']]
+Session ID: 35bf68ac69d769fd65ce2d51c3b320ce
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -131,27 +166,338 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 16 more
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at sevilaitest.SevilaiDriverEditTest.sevilaidriveredit(SevilaiDriverEditTest.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
+            <line>
+              <![CDATA[Toast Message: Success
+Driver updated successfully 11%]]>
+            </line>
+            <line>
+              <![CDATA[Test Case SDA_TC_02 Passed: Driver updated successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sevilaidriveredit -->
+        <test-method signature="sevilaivehicleRemoveAccess()[pri:0, instance:sevilaitest.SevilaiDriverEditTest@5b12b668]" started-at="2025-02-19T01:29:14 IST" name="sevilaivehicleRemoveAccess" finished-at="2025-02-19T01:29:14 IST" depends-on-methods="sevilaitest.SevilaiDriverEditTest.sevilaidriveredit" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method sevilaitest.SevilaiDriverEditTest.sevilaivehicleRemoveAccess() on instance sevilaitest.SevilaiDriverEditTest@5b12b668 depends on not successfully finished methods 
+[sevilaitest.SevilaiDriverEditTest.sevilaidriveredit() on instance sevilaitest.SevilaiDriverEditTest@5b12b668]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method sevilaitest.SevilaiDriverEditTest.sevilaivehicleRemoveAccess() on instance sevilaitest.SevilaiDriverEditTest@5b12b668 depends on not successfully finished methods 
+[sevilaitest.SevilaiDriverEditTest.sevilaidriveredit() on instance sevilaitest.SevilaiDriverEditTest@5b12b668]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sevilaivehicleRemoveAccess -->
+      </class> <!-- sevilaitest.SevilaiDriverEditTest -->
+      <class name="sevilaitest.ContractVehicleEditTest">
+        <test-method signature="editcontractvehicle()[pri:0, instance:sevilaitest.ContractVehicleEditTest@7586beff]" started-at="2025-02-19T01:30:14 IST" name="editcontractvehicle" finished-at="2025-02-19T01:30:17 IST" depends-on-methods="contractdriveradd" duration-ms="2550" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span style="display: inline-block; white-space: nowrap; transform-origin: 0px 0px 0px; pointer-events: none; transform: scale(0.919417, 2.66667);">...</span> is not clickable at point (305, 129). Other element would receive the click: <flt-semantics id="flt-semantic-node-50" tabindex="0" flt-tappable="" style="position: absolute; overflow: visible; width: 167.334px; height: 48px; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 206.182, 0); pointer-events: all; z-index: 2;">...</flt-semantics>
+  (Session info: chrome=133.0.6943.98)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35bf68ac69d769fd65ce2d51c3b320ce, clickElement {id=f.C02B4C21FE4C187C93BEDDB110EF5E07.d.4B6F27CBE1FDFB0EA7EBCDF7CAF1438A.e.384}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64739/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (35bf68ac69d769fd65ce2d51c3b320ce)] -> xpath: //span[contains(text(), 'Contract Vehicle')]]
+Session ID: 35bf68ac69d769fd65ce2d51c3b320ce]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span style="display: inline-block; white-space: nowrap; transform-origin: 0px 0px 0px; pointer-events: none; transform: scale(0.919417, 2.66667);">...</span> is not clickable at point (305, 129). Other element would receive the click: <flt-semantics id="flt-semantic-node-50" tabindex="0" flt-tappable="" style="position: absolute; overflow: visible; width: 167.334px; height: 48px; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 206.182, 0); pointer-events: all; z-index: 2;">...</flt-semantics>
+  (Session info: chrome=133.0.6943.98)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35bf68ac69d769fd65ce2d51c3b320ce, clickElement {id=f.C02B4C21FE4C187C93BEDDB110EF5E07.d.4B6F27CBE1FDFB0EA7EBCDF7CAF1438A.e.384}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\KADIT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64739}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64739/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (35bf68ac69d769fd65ce2d51c3b320ce)] -> xpath: //span[contains(text(), 'Contract Vehicle')]]
+Session ID: 35bf68ac69d769fd65ce2d51c3b320ce
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at sevilaitest.ContractVehicleEditTest.editcontractvehicle(ContractVehicleEditTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editcontractvehicle -->
+        <test-method is-config="true" signature="checkLogin()[pri:0, instance:sevilaitest.ContractVehicleEditTest@7586beff]" started-at="2025-02-19T01:30:14 IST" name="checkLogin" finished-at="2025-02-19T01:30:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogin -->
+        <test-method signature="contractvehicleRemoveAccess()[pri:0, instance:sevilaitest.ContractVehicleEditTest@7586beff]" started-at="2025-02-19T01:30:17 IST" name="contractvehicleRemoveAccess" finished-at="2025-02-19T01:30:17 IST" depends-on-methods="sevilaitest.ContractVehicleEditTest.editcontractvehicle" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method sevilaitest.ContractVehicleEditTest.contractvehicleRemoveAccess() on instance sevilaitest.ContractVehicleEditTest@7586beff depends on not successfully finished methods 
+[sevilaitest.ContractVehicleEditTest.editcontractvehicle() on instance sevilaitest.ContractVehicleEditTest@7586beff]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method sevilaitest.ContractVehicleEditTest.contractvehicleRemoveAccess() on instance sevilaitest.ContractVehicleEditTest@7586beff depends on not successfully finished methods 
+[sevilaitest.ContractVehicleEditTest.editcontractvehicle() on instance sevilaitest.ContractVehicleEditTest@7586beff]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contractvehicleRemoveAccess -->
+      </class> <!-- sevilaitest.ContractVehicleEditTest -->
+      <class name="sevilaitest.SevilaiDriverAddTest">
+        <test-method is-config="true" signature="checkLogin()[pri:0, instance:sevilaitest.SevilaiDriverAddTest@327514f]" started-at="2025-02-19T01:28:24 IST" name="checkLogin" finished-at="2025-02-19T01:28:24 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogin -->
+        <test-method signature="sevilaidriveradd()[pri:0, instance:sevilaitest.SevilaiDriverAddTest@327514f]" started-at="2025-02-19T01:28:24 IST" name="sevilaidriveradd" description="SDA_TC_01: Validate driver is added successfully" finished-at="2025-02-19T01:29:00 IST" depends-on-methods="sevilaivehicleedit" duration-ms="36282" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[PASSED: Driver page is successfully displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Toast Message: Success
+Driver added successfully 14%]]>
+            </line>
+            <line>
+              <![CDATA[Test Case SDA_TC_01 Passed: Driver added successfully.]]>
+            </line>
+            <line>
+              <![CDATA[Toast Message: Success
+Driver added successfully 14%]]>
+            </line>
+            <line>
+              <![CDATA[Test Case SDA_TC_01 Passed: Driver added successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sevilaidriveradd -->
+      </class> <!-- sevilaitest.SevilaiDriverAddTest -->
+      <class name="sevilaitest.ContractDriverEditTest">
+        <test-method is-config="true" signature="checkLogin()[pri:0, instance:sevilaitest.ContractDriverEditTest@4c12331b]" started-at="2025-02-19T01:29:45 IST" name="checkLogin" finished-at="2025-02-19T01:29:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogin -->
+        <test-method signature="contractdriveredit()[pri:0, instance:sevilaitest.ContractDriverEditTest@4c12331b]" started-at="2025-02-19T01:29:45 IST" name="contractdriveredit" description="CDA_TC_02: Validate driver is added successfully" finished-at="2025-02-19T01:30:08 IST" depends-on-methods="contractdriveradd" duration-ms="22852" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Toast Message: Success
+Driver updated successfully 12%]]>
+            </line>
+            <line>
+              <![CDATA[Test Case CDA_TC_02 Passed: Driver updated successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- contractdriveredit -->
+        <test-method signature="contractDriverRemoveAccess()[pri:0, instance:sevilaitest.ContractDriverEditTest@4c12331b]" started-at="2025-02-19T01:30:08 IST" name="contractDriverRemoveAccess" finished-at="2025-02-19T01:30:14 IST" depends-on-methods="sevilaitest.ContractDriverEditTest.contractdriveredit" duration-ms="6482" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Remove button clicked successfully!]]>
+            </line>
+            <line>
+              <![CDATA[Toast Message: Success
+Driver removed successfully 16%]]>
+            </line>
+            <line>
+              <![CDATA[Test Case CDRA_TC_03 Passed: Driver removed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- contractDriverRemoveAccess -->
+      </class> <!-- sevilaitest.ContractDriverEditTest -->
+      <class name="sevilaitest.ContractDriverAddTest">
+        <test-method is-config="true" signature="checkLogin()[pri:0, instance:sevilaitest.ContractDriverAddTest@1165b38]" started-at="2025-02-19T01:29:14 IST" name="checkLogin" finished-at="2025-02-19T01:29:14 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogin -->
+        <test-method signature="contractdriveradd()[pri:0, instance:sevilaitest.ContractDriverAddTest@1165b38]" started-at="2025-02-19T01:29:14 IST" name="contractdriveradd" description="CDA_TC_02: Validate driver is added successfully" finished-at="2025-02-19T01:29:45 IST" depends-on-methods="sevilaidriveredit" duration-ms="30894" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[PASSED: Driver page is successfully displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Toast Message: Success
+Driver added successfully 11%]]>
+            </line>
+            <line>
+              <![CDATA[Test Case CDA_TC_02 Passed: Driver added successfully.]]>
+            </line>
+            <line>
+              <![CDATA[Toast Message: Success
+Driver added successfully 14%]]>
+            </line>
+            <line>
+              <![CDATA[Test Case CDA_TC_02 Passed: Driver added successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- contractdriveradd -->
+      </class> <!-- sevilaitest.ContractDriverAddTest -->
+      <class name="sevilaitest.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sevilaitest.LoginTest@5b7a5baa]" started-at="2025-02-19T01:27:24 IST" name="setup" finished-at="2025-02-19T01:27:33 IST" duration-ms="8916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sevilaitest.LoginTest@5b7a5baa]" started-at="2025-02-19T01:30:17 IST" name="teardown" finished-at="2025-02-19T01:30:18 IST" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sevilaitest.LoginTest -->
+      <class name="sevilaitest.SevilaiVehicleEditTest">
+        <test-method is-config="true" signature="checkLogin()[pri:0, instance:sevilaitest.SevilaiVehicleEditTest@4c402120]" started-at="2025-02-19T01:28:05 IST" name="checkLogin" finished-at="2025-02-19T01:28:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogin -->
+        <test-method signature="sevilaivehicleedit()[pri:0, instance:sevilaitest.SevilaiVehicleEditTest@4c402120]" started-at="2025-02-19T01:28:05 IST" name="sevilaivehicleedit" finished-at="2025-02-19T01:28:16 IST" depends-on-methods="sevilaiadd" duration-ms="11598" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[PASSED: Vehicle page is successfully displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Edit button clicked successfully!]]>
+            </line>
+            <line>
+              <![CDATA[Toast Message: Success
+Vehicle updated successfully 41%]]>
+            </line>
+            <line>
+              <![CDATA[Test Case SVE_TC_01 Passed: Vehicle updated successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sevilaivehicleedit -->
+        <test-method signature="sevilaivehicleRemoveAccess()[pri:0, instance:sevilaitest.SevilaiVehicleEditTest@4c402120]" started-at="2025-02-19T01:28:16 IST" name="sevilaivehicleRemoveAccess" finished-at="2025-02-19T01:28:24 IST" depends-on-methods="sevilaitest.SevilaiVehicleEditTest.sevilaivehicleedit" duration-ms="7348" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Remove button clicked successfully!]]>
+            </line>
+            <line>
+              <![CDATA[Vehicle removed successfully]]>
+            </line>
+            <line>
+              <![CDATA[Toast Message: Success
+Vehicle removed successfully 14%]]>
+            </line>
+            <line>
+              <![CDATA[Test Case SVRA_TC_01 Passed: Vehicle removed successfully.]]>
+            </line>
           </reporter-output>
         </test-method> <!-- sevilaivehicleRemoveAccess -->
       </class> <!-- sevilaitest.SevilaiVehicleEditTest -->
       <class name="sevilaitest.SevilaiVehAddTest">
-        <test-method is-config="true" signature="checkLogin()[pri:0, instance:sevilaitest.SevilaiVehAddTest@c730b35]" started-at="2025-02-18T16:09:22 IST" name="checkLogin" finished-at="2025-02-18T16:09:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="checkLogin()[pri:0, instance:sevilaitest.SevilaiVehAddTest@6025e1b6]" started-at="2025-02-19T01:27:33 IST" name="checkLogin" finished-at="2025-02-19T01:27:33 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogin -->
-        <test-method signature="sevilaiadd()[pri:0, instance:sevilaitest.SevilaiVehAddTest@c730b35]" started-at="2025-02-18T16:09:22 IST" name="sevilaiadd" finished-at="2025-02-18T16:09:54 IST" duration-ms="31288" status="PASS">
+        <test-method signature="sevilaiadd()[pri:0, instance:sevilaitest.SevilaiVehAddTest@6025e1b6]" started-at="2025-02-19T01:27:33 IST" name="sevilaiadd" finished-at="2025-02-19T01:28:05 IST" duration-ms="31453" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[PASSED: Vehicle page is successfully displayed.]]>
@@ -165,7 +511,7 @@ Vehicle added successfully 12%]]>
             </line>
             <line>
               <![CDATA[Toast Message: Success
-Vehicle added successfully 12%]]>
+Vehicle added successfully 13%]]>
             </line>
             <line>
               <![CDATA[Vehicle with capacity 20 and number vehi2 added successfully.]]>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="HappyFlowSuite" parallel="true" verbose="3"> 
+<suite name="HappyFlowSuite" parallel="false" verbose="3"> 
   <test name="SevilaiHappyFlow">
     <classes>
       <!-- Login should always be first -->
@@ -11,15 +11,15 @@
       <class name="sevilaitest.SevilaiVehAddTest"/>
       <class name="sevilaitest.SevilaiVehicleEditTest"/>
 
-      <!-- Driver Add and Edit 
+      <!-- Driver Add and Edit -->
       <class name="sevilaitest.SevilaiDriverAddTest"/>
      <class name="sevilaitest.SevilaiDriverEditTest"/>
 
-       Contract Driver Add, Edit, and Vehicle Edit 
+      <!-- Contract Driver Add, Edit, and Vehicle Edit -->
       <class name="sevilaitest.ContractDriverAddTest"/>
       <class name="sevilaitest.ContractDriverEditTest"/>
-      <class name="sevilai_Test.ContractVehicleEdit"/>
-     -->
+      <class name="sevilaitest.ContractVehicleEditTest"/>
+     
      
     </classes>
   </test>

@@ -11,12 +11,16 @@ import org.testng.annotations.Test;
 
 public class SevilaiVehAddTest extends LoginTest {
 	
-	@BeforeClass
-    public void checkLogin() throws Throwable {
-        if (driver == null) { // If driver is not initialized, set it up
-            setup();
-        }
-    }
+	
+	  @BeforeClass public void checkLogin() throws Throwable { 
+		  if (driver == null) {
+			  setup();
+	  }
+	   // If driver is not initialized, set it up setup();
+		  }
+	  
+	 
+    
 @Test
 public void sevilaiadd() throws Throwable {
     String testCaseID = "SVA_TC_01";

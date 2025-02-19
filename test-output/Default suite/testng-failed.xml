@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sevilai_Test.Super_Admin_Edit">
+      <class name="sevilaitest.SevilaiVehicleEditTest">
         <methods>
+          <include name="sevilaivehicleRemoveAccess"/>
+          <include name="checkLogin"/>
           <include name="setup"/>
-          <include name="contractvehicleRemoveAccess"/>
           <include name="teardown"/>
+          <include name="sevilaivehicleEdit"/>
         </methods>
-      </class> <!-- sevilai_Test.Super_Admin_Edit -->
+      </class> <!-- sevilaitest.SevilaiVehicleEditTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

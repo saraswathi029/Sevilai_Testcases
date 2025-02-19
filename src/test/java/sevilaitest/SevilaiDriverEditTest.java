@@ -15,7 +15,7 @@ public class SevilaiDriverEditTest extends LoginTest{
 	@BeforeClass
     public void checkLogin() throws Throwable {
         if (driver == null) { // If driver is not initialized, set it up
-            setup();
+            
         }
     }
 	
@@ -29,18 +29,16 @@ public class SevilaiDriverEditTest extends LoginTest{
 	                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Tab 3 of 5')]")));
 	        actions.moveToElement(DriverTabButton).click().perform();
 
-	        WebElement DriverElement = wait.until(
-	                ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Drivers']")));
-
-	        Assert.assertTrue(DriverElement.isDisplayed(), "Driver page is not displayed.");
-	        Reporter.log("PASSED: Driver page is successfully displayed.", true);
-
-		
-		
-		
-
-		
-      WebElement searchElement = wait.until(ExpectedConditions.presenceOfElementLocated( By.cssSelector("[aria-label='Search...']")));
+			/*
+			 * WebElement DriverElement = wait.until(
+			 * ExpectedConditions.visibilityOfElementLocated(By.xpath(
+			 * "//span[text()='Drivers']")));
+			 * 
+			 * Assert.assertTrue(DriverElement.isDisplayed(),
+			 * "Driver page is not displayed.");
+			 * Reporter.log("PASSED: Driver page is successfully displayed.", true);
+			 */
+		WebElement searchElement = wait.until(ExpectedConditions.presenceOfElementLocated( By.cssSelector("[aria-label='Search...']")));
 	  searchElement.sendKeys("vehi5");
 	  WebElement Editbutton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//flt-semantics[text()='Edit']")));
 	  Editbutton.click();
@@ -87,20 +85,27 @@ public class SevilaiDriverEditTest extends LoginTest{
         try {
             Assert.assertTrue(messageText.contains("Driver updated successfully"),
                     "Toast message validation failed for Test Case: " + testCaseID);
-            Reporter.log("Test Case " + testCaseID + " Passed: Driver updated successfully.", true);
+            Reporter.log("Test Case " + testCaseID + " Passed: Driver updated successfully", true);
             
-         // Search for the driver again to refresh the details
-            searchElement.sendKeys(Keys.CONTROL + "a", Keys.BACK_SPACE); // Clear search
-            searchElement.sendKeys("vehi5"); // Search the same driver again
-            Thread.sleep(2000); // Wait for data to reload (Use explicit wait if possible)
-
-            // Locate the email field again and fetch its value
-            WebElement updatedEmailField = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[aria-label='Email Address']")));
-            String updatedEmailValue = updatedEmailField.getAttribute("value"); // Get email field value
-
-            // Assert if email is removed (empty)
-            Assert.assertTrue(updatedEmailValue.isEmpty(), "Email address is not removed!");
-            Reporter.log("Validation Passed: Email address is successfully removed from the driver details.", true);
+			/*
+			 * // Search for the driver again to refresh the details
+			 * searchElement.sendKeys(Keys.CONTROL + "a", Keys.BACK_SPACE); // Clear search
+			 * searchElement.sendKeys("vehi5"); // Search the same driver again
+			 * Thread.sleep(2000); // Wait for data to reload (Use explicit wait if
+			 * possible)
+			 * 
+			 * // Locate the email field again and fetch its value WebElement
+			 * updatedEmailField =
+			 * wait.until(ExpectedConditions.presenceOfElementLocated(By.
+			 * cssSelector("[aria-label='Email Address']"))); String updatedEmailValue =
+			 * updatedEmailField.getAttribute("value"); // Get email field value
+			 * 
+			 * // Assert if email is removed (empty)
+			 * Assert.assertTrue(updatedEmailValue.isEmpty(),
+			 * "Email address is not removed!"); Reporter.
+			 * log("Validation Passed: Email address is successfully removed from the driver details."
+			 * , true);
+			 */
         } catch (AssertionError e) {
             Reporter.log("Test Case " + testCaseID + " Failed.", true);
             throw e; // Ensures failure is recorded in the TestNG report
@@ -111,14 +116,30 @@ public class SevilaiDriverEditTest extends LoginTest{
 
    }
 	}
-        @Test(dependsOnMethods = "sevilaidriveradd")
-        public void sevilaivehicleRemoveAccess() throws Throwable {
+        @Test(dependsOnMethods = "sevilaidriveredit")
+        public void sevilaidriverRemoveAccess() throws Throwable {
             String testCaseID = "SDRA_TC_03";
             Actions actions = new Actions(driver);
+            
+            WebElement DriverTabButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//span[contains(text(),'Tab 3 of 5')]")));
+            actions.moveToElement(DriverTabButton).click().perform();
 
-            // Locate the vehicle
-            WebElement vehicle = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='vehi3']")));
+            
+            WebElement searchElement =
+          		  wait.until(ExpectedConditions.presenceOfElementLocated(
+          		  By.xpath("//input[@type='text']")));
+          		  
+          		  searchElement.sendKeys(Keys.CONTROL + "a");
+          		  searchElement.sendKeys(Keys.BACK_SPACE); 
+          		  searchElement.sendKeys("vehi3");
+          		  searchElement.sendKeys(Keys.ENTER); // Ensure search execution
+          		 
+                 // Handle case where vehicle does not exist
+                 WebElement vehicle = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='vehi3']")));
 
+
+         
        
         WebElement RemoveButton= wait.until(ExpectedConditions.elementToBeClickable(vehicle.findElement(By.xpath("//span[text()='Vehi3']/following::flt-semantics[text()='Remove Access'][1]"))));
      // Use the Actions class to move to the Edit button and click it

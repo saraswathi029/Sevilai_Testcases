@@ -32,7 +32,7 @@ public class ContractVehicleEditTest extends LoginTest {
          actions.moveToElement(VehicleTabButton).click().perform();
 
 		WebElement Contractvehicle = wait
-				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'Contract Vehicle')]")));
+				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'Tab 2 of 2')]")));
 		Contractvehicle.click();
 		
 		WebElement VehicleElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Vehicles']")));
@@ -72,13 +72,32 @@ public class ContractVehicleEditTest extends LoginTest {
 
    }
     }
-        @Test(dependsOnMethods = "contractdriveradd")
+        @Test(dependsOnMethods = "editcontractvehicle")
         public void contractvehicleRemoveAccess() throws Throwable {
             String testCaseID = "CVRA_TC_01";
             Actions actions = new Actions(driver);
+            WebElement VehicleTabButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//span[contains(text(),'Tab 2 of 5')]")));
+            actions.moveToElement(VehicleTabButton).click().perform();
+            
+            WebElement ContractDriver = wait
+    				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'Contract Vehicles')]")));
+    		 actions.moveToElement(ContractDriver).click().perform();
+    		
 
-    //Remove Access Functionality
-     WebElement vehicle = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='DumTe2']")));
+            
+            WebElement searchElement =
+          		  wait.until(ExpectedConditions.presenceOfElementLocated(
+          		  By.xpath("//input[@type='text']")));
+          		  
+          		  searchElement.sendKeys(Keys.CONTROL + "a");
+          		  searchElement.sendKeys(Keys.BACK_SPACE); 
+          		  searchElement.sendKeys("DumTe2");
+          		  searchElement.sendKeys(Keys.ENTER);
+
+
+            // Locate the vehicle
+            WebElement vehicle = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='DumTe2']")));
      
      WebElement RemoveButton= wait.until(ExpectedConditions.elementToBeClickable(vehicle.findElement(By.xpath("//span[text()='DumTe2']/following::flt-semantics[text()='Remove Access'][1]"))));
   // Use the Actions class to move to the Edit button and click it
@@ -101,7 +120,7 @@ public class ContractVehicleEditTest extends LoginTest {
 	        Reporter.log("Toast Message: " + messageText1, true);
 
 	  try {
-        Assert.assertTrue(messageText1.contains(""),
+        Assert.assertTrue(messageText1.contains("Vehicle removed successfully"),
                 "Toast message validation failed for Test Case: " + testCaseID);
         Reporter.log("Test Case " + testCaseID + " Passed: Vehicle removed successfully.", true);
     } catch (AssertionError e) {

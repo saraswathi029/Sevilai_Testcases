@@ -19,7 +19,7 @@ public class SevilaiDriverAddTest extends LoginTest {
         }
     }
 
-    @Test(description = "SDA_TC_01: Validate driver is added successfully")
+    @Test(description = "SDA_TC_01: Validate driver is added successfully", dependsOnMethods = "sevilaivehicleedit")
     public void sevilaidriveradd() throws InterruptedException {
         String testCaseID = "SDA_TC_01"; // Assign test case ID
 
@@ -87,14 +87,14 @@ public class SevilaiDriverAddTest extends LoginTest {
 
             // Validate success toast message
             WebElement toastMessage = wait.until(ExpectedConditions.presenceOfElementLocated(
-                    By.cssSelector("[aria-label*='Driver added successfuly']")));
+                    By.cssSelector("[aria-label*='Driver added successfully']")));
             String messageText = toastMessage.getAttribute("aria-label");
             Reporter.log("Toast Message: " + messageText, true);
 
             try {
                 Assert.assertTrue(messageText.contains("Driver added successfully"),
                         "Toast message validation failed for Test Case: " + testCaseID);
-                Reporter.log("Test Case " + testCaseID + " Passed: Driver added successfuly.", true);
+                Reporter.log("Test Case " + testCaseID + " Passed: Driver added successfully.", true);
             } catch (AssertionError e) {
                 Reporter.log("Test Case " + testCaseID + " Failed.", true);
                 throw e;
